@@ -1,0 +1,347 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Benguiat";
+  src: url("fontes/Benguiat Bold.ttf");
+}
+
+body {
+  background-color: #0c0102;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* BOTÃO */
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  gap: 12px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 16px 0;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+  position: absolute;
+  z-index: 9;
+}
+
+/* SECTION */
+section {
+  width: 100%;
+  display: flex;
+  padding: 7vw;
+}
+
+/* BG MOSTRO */
+.bgmostro {
+  background: url("img/bg-sec2.webp") center / cover no-repeat;
+  position: relative;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7vw 7vw;
+  position: relative;
+}
+
+/* IMAGENS HERO */
+.hero picture {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 1, 2, 0) 0%,
+    #0c0102 100%
+  );
+  z-index: 3;
+}
+
+/* HERO CONTENT */
+.esquerda,
+.direita {
+  width: 30%;
+  z-index: 4;
+}
+
+.esquerda h3 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.esquerda h1 {
+  font-size: 3.7vw;
+  font-family: "Benguiat";
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.direita p {
+  font-size: 2vw;
+  margin-bottom: 32px;
+  text-align: right;
+}
+
+/* CIDADES */
+.secaocidade {
+  flex-direction: column;
+}
+
+.secaocidade .titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secaocidade .titulo h2 {
+  font-size: 30px;
+}
+
+/* CARDS */
+.cards {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.card:nth-child(1) { background-image: url("img/card1.webp"); }
+.card:nth-child(2) { background-image: url("img/card2.webp"); }
+.card:nth-child(3) { background-image: url("img/card3.webp"); }
+
+/* DEPOIMENTOS */
+.secaoDepoimentos {
+  flex-direction: column;
+}
+
+.secaoDepoimentos .logotipos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secaoDepoimentos .depoimentos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.secaoDepoimentos .depoimento {
+  width: 31%;
+}
+
+/* OBRIGADO */
+.secaoObrigado {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.secaoObrigado ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: url("img/bg-footer.webp") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudoFooter {
+  width: 100%;
+  padding: 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoFooter h3 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.logoFooter h2 {
+  font-size: 3.7vw;
+  font-family: "Benguiat";
+}
+
+.secoesFooter {
+  display: flex;
+  gap: 6%;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.secoesFooter h3 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+
+.socialredes ul {
+  display: flex;
+  gap: 12px;
+}
+
+.logotiposFooter {
+  width: 100%;
+  padding: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* TEXTO INFINITO */
+.textoInfinito {
+  display: flex;
+  width: max-content;
+  margin-bottom: 100px;
+}
+
+.textoInfinito h3 {
+  font-size: 12vw;
+  font-family: "Benguiat";
+  color: #85858553;
+  padding-left: 8vw;
+  animation: textoInfinito 13s linear infinite;
+}
+
+@keyframes textoInfinito {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ================== */
+/* RESPONSIVO */
+/* ================== */
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .esquerda,
+  .direita {
+    width: 100%;
+    align-items: center;
+  }
+
+  .direita p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .cards,
+  .depoimentos,
+  .conteudoFooter {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .card,
+  .depoimento {
+    width: 100%;
+  }
+
+  .secoesFooter {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 668px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .esquerda h1 {
+    font-size: 36px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .direita p {
+    font-size: 14px;
+  }
+
+  .secaoObrigado ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .secoesFooter {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .socialredes ul {
+    justify-content: center;
+  }
+}

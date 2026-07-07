@@ -274,7 +274,7 @@ footer {
   }
 }
 
-/* ================== */
+
 /* RESPONSIVO */
 /* ================== */
 
@@ -284,13 +284,12 @@ footer {
     text-align: center;
   }
   .hero picture {
-  display: block; /* Remove espaços extras abaixo da imagem */
-  width: 100%;    /* Garante que o container ocupe o espaço disponível */
-}
+  display: block; 
+  width: 100%;    
 
 .hero picture img {
   width: 100%;
-  height: auto;   /* Mantém a proporção da imagem */
+  height: auto;   
   display: block;
 }
 

@@ -359,7 +359,7 @@ footer {
 @media(max-width:668px){
 
 header{
- padding: 100px 20px 15px;
+ padding: 100%;
   height: auto;  
   font-size: 10px;
 }

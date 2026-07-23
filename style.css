@@ -361,7 +361,7 @@ footer {
 header{
  padding: 100%;
   height: auto;  
-  font-size: 10px;
+  gap:10px;
 }
 
 }

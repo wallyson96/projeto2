@@ -360,7 +360,8 @@ footer {
 
 header{
  padding:15px;
-  height: auto;   
+  height: auto;  
+  font-size: 10px;
 }
 
 }
